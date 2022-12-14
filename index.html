@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPG_TestTask</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <h1 class="title">Hello</h1>
+    <form class="validationForm">
+        <h2 class="validationForm__title">For business enquiries please use the form below</h2>
+        <p class="validationForm__descr">*Required</p>
+        <!-- Формы input'a -->
+
+        <div class="entryBox">
+            <input type="text" id="name" class="entryBox__input entryBox__input_name" data-req>
+            <label for="name" class="entryBox__title">Name <span>*</span></label>
+        </div>
+        <div class="entryBox">
+            <input type="text" name="Company" class="entryBox__input entryBox__input_company" data-req>
+            <label for="Company" class="entryBox__title">Company <span>*</span></label>
+        </div>
+        <div class="entryBox">
+            <input type="email" name="mail" class="entryBox__input entryBox__input_mail" data-req>
+            <label for="mail" class="entryBox__title">E-mail <span>*</span></label>
+        </div>
+        <div class="entryBox">
+            <input type="number" name="Phone" class="entryBox__input entryBox__input_phone">
+            <label for="Phone" class="entryBox__title">Phone</label>
+        </div>
+        <div class="entryBox">
+            <input type="text" name="Subject" class="entryBox__input">
+            <label for="Subject" class="entryBox__title">Subject</label>
+        </div>
+        <div class="entryBox">
+            <input type="text" name="Message" class="entryBox__input entryBox__input__message" data-req>
+            <label for="Message" class="entryBox__title">Message <span>*</span></label>
+        </div>
+
+        <!-- ЧекБокс -->
+        <div class="validationForm__checkbox">
+            <input type="checkbox" name="checkbox" id="" class="input__checkbox">
+            <p>I accept <a href="">Terms and Privacy Policy</a></p>
+        </div>
+
+        <!-- Кнопка -->
+        <button class="validationForm__btn" type="submit">Send</button>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
