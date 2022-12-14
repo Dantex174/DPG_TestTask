@@ -72,6 +72,9 @@ body {
             font-size: 15px;
             line-height: 120%;
             color: #797EA3;
+            &:hover {
+                cursor:	default;
+            }
         }
         &__title.error {
             color: red;
